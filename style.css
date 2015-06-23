@@ -1,114 +1,68 @@
+
 html {
-        height: 100%;
-        position: relative;
-    }
+  height: 100%;
+  position: relative;
+}
 
 body {
-	height: 100%;
-	background-color: black;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	margin: 0;
+  height: inherit;
+  background-color: #efefef;
 }
 
-div#columncontainer {
-	min-height: 100%;
-	max-height: 100%;
-	display: inline;
+@-moz-keyframes movement {
+  from {-moz-transform: translateY(0px);}
+  to {-moz-transform: translateY(40px);}
 }
 
-div.bg {
-	display:inline-block;
-	text-align: center;
-	width: 33%;
-	height: 100%;
-	background-position: center top;
+@-webkit-keyframes movement {
+  from {-webkit-transform: translateY(0px);}
+  to {-webkit-transform: translateY(40px);}
 }
 
-	#bg1 {
-		background-image: url("hotovaltinebg.png");
-	}
-	#bg2 {
-		background-image: url("coldovaltinebg.png");
-	}
-	#bg3 {
-		background-image: url("solutionsbg.png");
-	}
-
-div.column {
-	display:inline-block;
-	text-align: center;
-	width: 100%;
-	height: 100%;
+@keyframes movement {
+  from {transform: translateY(0px);}
+  to {transform: translateY(40px);}
 }
 
-#column1 {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.3);
-}
-#column1:hover {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.1);
+#masami {
+  -moz-animation-delay: 0ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 
-#column2 {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.3);
-}
-#column2:hover {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.1);
+#espurr {
+  -moz-animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+  animation-delay: 250ms;
 }
 
-#column3 {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.3);
-}
-#column3:hover {
-	-webkit-transition: background 0.4s ease-in-out;
-	transition: background 0.4s ease-in-out;
-	background: rgba(0, 0, 0, 0.1);
+#salt {
+  -moz-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
 }
 
-#hotov {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	z-index: 2;
+.poopdickbutt {
+  position: relative;
+  display: inline-block;
 }
-
-#coldov {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	z-index: 2;
-}
-
-#solu {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	z-index: 2;
-}
-
-img.tumblrlink {
-	width: 200px;
-	height: 200px;
-
-	background: #989898;
-
-	border: 2px solid;
-	border-color: black;
-	border-radius: 10%;
-	overflow: hidden;
+    
+.images {
+  width: 225px;
+  height: 225px;
+  
+  -moz-animation-name: movement;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-fill-mode: forwards;
+  
+  -webkit-animation-name: movement;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  
+  animation-name: movement;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }

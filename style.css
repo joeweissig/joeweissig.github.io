@@ -1,27 +1,24 @@
 
 html {
-  height: 100%;
-  position: relative;
 }
 
 body {
-  height: inherit;
   background-color: #efefef;
 }
 
 @-moz-keyframes movement {
-  from {-moz-transform: translateY(0px);}
-  to {-moz-transform: translateY(40px);}
+  from {-moz-transform: translateY(40px); opacity: 0}
+  to {-moz-transform: translateY(0px); opacity: 1}
 }
 
 @-webkit-keyframes movement {
-  from {-webkit-transform: translateY(0px);}
-  to {-webkit-transform: translateY(40px);}
+  from {-webkit-transform: translateY(40px); opacity: 0}
+  to {-webkit-transform: translateY(0px); opacity: 1}
 }
 
 @keyframes movement {
-  from {transform: translateY(0px);}
-  to {transform: translateY(40px);}
+  from {transform: translateY(40px); opacity: 0}
+  to {transform: translateY(0px); opacity: 1}
 }
 
 #masami {
@@ -31,38 +28,46 @@ body {
 }
 
 #espurr {
+  -moz-animation-delay: 125ms;
+  -webkit-animation-delay: 125ms;
+  animation-delay: 125ms;
+}
+
+#salt {
   -moz-animation-delay: 250ms;
   -webkit-animation-delay: 250ms;
   animation-delay: 250ms;
 }
 
-#salt {
-  -moz-animation-delay: 500ms;
-  -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
-}
-
 .poopdickbutt {
-  position: relative;
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -100px;
   display: inline-block;
 }
     
 .images {
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
+  float: left;
+  opacity: 0;
   
   -moz-animation-name: movement;
-  -moz-animation-duration: 1s;
+  -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
   
   -webkit-animation-name: movement;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
   
   animation-name: movement;
-  animation-duration: 1s;
+  animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }

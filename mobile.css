@@ -61,9 +61,9 @@ body {
   animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  -moz-animation-delay: 100ms;
-  -webkit-animation-delay: 100ms;
-  animation-delay: 100ms;
+  -moz-animation-delay: 0ms;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 
 #dream {
@@ -105,9 +105,9 @@ body {
   animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  -moz-animation-delay: 300ms;
-  -webkit-animation-delay: 300ms;
-  animation-delay: 300ms;
+  -moz-animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 
 #insta {
@@ -149,9 +149,9 @@ body {
   animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  -moz-animation-delay: 500ms;
-  -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+  -moz-animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
 }
 
 #github {
@@ -193,9 +193,9 @@ body {
   animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-  -moz-animation-delay: 700ms;
-  -webkit-animation-delay: 700ms;
-  animation-delay: 700ms;
+  -moz-animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 
 .imagecontainer {
@@ -216,7 +216,7 @@ div.linkbox {
   height: 24.999999%;
   float: left;
   text-align: center;
-  font-size: 48px;
+  font-size: 80px;
   position: relative;
   background: #777777;
 }
@@ -253,7 +253,7 @@ img.images {
 
 .link {
   width: 50%;
-  height: 30%;
+  height: 40%;
   overflow: auto;
   margin: auto;
   position: absolute;

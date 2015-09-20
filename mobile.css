@@ -24,17 +24,17 @@ body {
 
 #hot {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -46,17 +46,17 @@ body {
 
 #cold {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -68,17 +68,17 @@ body {
 
 #dream {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -90,17 +90,17 @@ body {
 
 #facebook {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -112,17 +112,17 @@ body {
 
 #insta {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -134,17 +134,17 @@ body {
 
 #twitter {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -156,17 +156,17 @@ body {
 
 #github {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -178,17 +178,17 @@ body {
 
 #ello {
   opacity: 0;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;
@@ -210,8 +210,8 @@ body {
 */
   display: inline;
 }
-    
-div.linkbox { 
+
+div.linkbox {
   width: 50%;
   height: 24.999999%;
   float: left;
@@ -221,7 +221,11 @@ div.linkbox {
   background: #777777;
 }
 
-.btn { 
+div.linkbox:hover {
+  width: 200px;
+}
+
+.btn {
   color: #ffffff;
   text-decoration: none;
 }
@@ -233,17 +237,17 @@ img.images {
   float: left;
   margin-left: 25%;
   margin-top: 25%;
-  
+
   -moz-animation-name: movement;
   -moz-animation-duration: 500ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
-  
+
   -webkit-animation-name: movement;
   -webkit-animation-duration: 500ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
-  
+
   animation-name: movement;
   animation-duration: 500ms;
   animation-timing-function: ease-out;

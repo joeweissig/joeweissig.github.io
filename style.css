@@ -6,18 +6,25 @@ body {
   background-color: #efefef;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 @-moz-keyframes movement {
-  from {-moz-transform: translateY(40px); opacity: 0}
+  from {-moz-transform: translateY(20px); opacity: 0}
   to {-moz-transform: translateY(0px); opacity: 1}
 }
 
 @-webkit-keyframes movement {
-  from {-webkit-transform: translateY(40px); opacity: 0}
+  from {-webkit-transform: translateY(20px); opacity: 0}
   to {-webkit-transform: translateY(0px); opacity: 1}
 }
 
 @keyframes movement {
-  from {transform: translateY(40px); opacity: 0}
+  from {transform: translateY(20px); opacity: 0}
   to {transform: translateY(0px); opacity: 1}
 }
 
@@ -40,17 +47,17 @@ div.linkbox {
   opacity: 0;
 
   -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
+  -moz-animation-duration: 250ms;
   -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
 
   -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
+  -webkit-animation-duration: 250ms;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
 
   animation-name: movement;
-  animation-duration: 500ms;
+  animation-duration: 250ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -69,179 +76,45 @@ div.linkbox {
 }
 
 #cold {
+  -moz-animation-delay: 50ms;
+  -webkit-animation-delay: 50ms;
+  animation-delay: 50ms;
+}
 
-
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
+#dream {
   -moz-animation-delay: 100ms;
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
 }
 
-#dream {
+#facebook {
+  -moz-animation-delay: 150ms;
+  -webkit-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
 
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
+#insta {
   -moz-animation-delay: 200ms;
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
 }
 
-#facebook {
+#twitter {
+  -moz-animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+  animation-delay: 250ms;
+}
 
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
+#github {
   -moz-animation-delay: 300ms;
   -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
 }
 
-#insta {
-
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
-  -moz-animation-delay: 400ms;
-  -webkit-animation-delay: 400ms;
-  animation-delay: 400ms;
-}
-
-#twitter {
-
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
-  -moz-animation-delay: 500ms;
-  -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
-}
-
-#github {
-
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
-  -moz-animation-delay: 600ms;
-  -webkit-animation-delay: 600ms;
-  animation-delay: 600ms;
-}
-
 #ello {
-
-  opacity: 0;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-
-
-  -moz-animation-delay: 700ms;
-  -webkit-animation-delay: 700ms;
-  animation-delay: 700ms;
+  -moz-animation-delay: 350ms;
+  -webkit-animation-delay: 350ms;
+  animation-delay: 350ms;
 }
 
 
@@ -271,33 +144,6 @@ div.linkbox {
   text-decoration: none;
 }
 
-
-
-/*
-img.images {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-left: 25%;
-  margin-top: 25%;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 500ms;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-fill-mode: forwards;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 500ms;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-
-  animation-name: movement;
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-*/
-
 .link {
   background: #777777;
   -webkit-border-radius: 15px;
@@ -313,22 +159,6 @@ img.images {
   background: #969696;
 }
 
-
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-
 #imagecontainer {
   margin-top: -50px;
-}
-
-#labelcontainer {
-  margin-top: -150px;
-}
-
-#hotlabel {
-
-
 }

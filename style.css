@@ -23,34 +23,52 @@ body {
 }
 
 .box {
-  width: 800px;
-  height: 400px;
+  width: auto;
+  height: 200px;
   position: absolute;
-  left: 50%;
   top: 50%;
-  margin-left: -400px;
-  margin-top: -200px;
   display: inline-block;
+  align-content: center;
+}
+#topbox {
+  margin-top: -150px;
+}
+#botbox {
+  margin-top: -50px;
+  margin-left: 50px;
 }
 
-div.linkbox {
+.linkbox {
   width: 200px;
   height: 200px;
   float: left;
   font-size: 96px;
   opacity: 0;
+  
+/*
+  margin-left: 50px;
+  margin-right: 50px;
+*/
 
   -moz-animation-name: transparency;
-  -moz-animation-duration: 250ms;
+  -moz-animation-duration: 1000ms;
   -moz-animation-fill-mode: forwards;
 
   -webkit-animation-name: transparency;
-  -webkit-animation-duration: 250ms;
+  -webkit-animation-duration: 1000ms;
   -webkit-animation-fill-mode: forwards;
 
   animation-name: transparency;
-  animation-duration: 250ms;
+  animation-duration: 1000ms;
   animation-fill-mode: forwards;
+  
+  background-image: url(res/instagram-background.png);
+}
+#topbox > .linkbox {
+  margin-right: 100px;
+}
+#botbox > .linkbox {
+  margin-left: 100px;
 }
 
 .link {
@@ -62,12 +80,13 @@ div.linkbox {
   position: absolute;
   top: 50%;
   left: 50%;
-  right: 0px;
   margin-top: -48px;
+  margin-left: -58px;
+  color: #efefef;
 }
 
 #hot {
-  background-image: url("res/hot-background.png");
+/*  background-image: url("res/hot-background.png");*/
   background-size: 200px 200px;
   -moz-animation-delay: 0ms;
   -webkit-animation-delay: 0ms;
@@ -75,57 +94,57 @@ div.linkbox {
 }
 
 #cold {
-  background-image: url("res/cold-background.png");
-  background-size: 200px 200px;
-  -moz-animation-delay: 50ms;
-  -webkit-animation-delay: 50ms;
-  animation-delay: 50ms;
-}
-
-#dream {
-  background-image: url("res/dream-background.png");
+/*  background-image: url("res/cold-background.png");*/
   background-size: 200px 200px;
   -moz-animation-delay: 100ms;
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
 }
 
-#facebook {
-  background-image: url("res/facebook-background.png");
-  background-size: 200px 200px;
-  -moz-animation-delay: 150ms;
-  -webkit-animation-delay: 150ms;
-  animation-delay: 150ms;
-}
-
-#insta {
-  background-image: url("res/instagram-background.png");
+#dream {
+/*  background-image: url("res/dream-background.png");*/
   background-size: 200px 200px;
   -moz-animation-delay: 200ms;
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
 }
 
-#twitter {
-  background-image: url("res/twitter-background.png");
-  background-size: 200px 200px;
-  -moz-animation-delay: 250ms;
-  -webkit-animation-delay: 250ms;
-  animation-delay: 250ms;
-}
-
-#github {
-  background-image: url("res/github-background.png");
+#facebook {
+/*  background-image: url("res/facebook-background.png");*/
   background-size: 200px 200px;
   -moz-animation-delay: 300ms;
   -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
 }
 
-#ello {
-  background-image: url("res/ello-background.png");
+#insta {
+/*  background-image: url("res/instagram-background.png");*/
   background-size: 200px 200px;
-  -moz-animation-delay: 350ms;
-  -webkit-animation-delay: 350ms;
-  animation-delay: 350ms;
+  -moz-animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+#github {
+/*  background-image: url("res/github-background.png");*/
+  background-size: 200px 200px;
+  -moz-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+#twitter {
+/*  background-image: url("res/twitter-background.png");*/
+  background-size: 200px 200px;
+  -moz-animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+#ello {
+/*  background-image: url("res/ello-background.png");*/
+  background-size: 200px 200px;
+  -moz-animation-delay: 700ms;
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
 }

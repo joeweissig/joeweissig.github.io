@@ -4,161 +4,128 @@ html {
 
 body {
   background-color: #efefef;
+  height: 100%;
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+@-moz-keyframes transparency {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
-@-moz-keyframes movement {
-  from {-moz-transform: translateY(20px); opacity: 0}
-  to {-moz-transform: translateY(0px); opacity: 1}
+@-webkit-keyframes transparency {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
-@-webkit-keyframes movement {
-  from {-webkit-transform: translateY(20px); opacity: 0}
-  to {-webkit-transform: translateY(0px); opacity: 1}
-}
-
-@keyframes movement {
-  from {transform: translateY(20px); opacity: 0}
-  to {transform: translateY(0px); opacity: 1}
+@keyframes transparency {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .box {
   width: 800px;
-  height: 100px;
+  height: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
   margin-left: -400px;
+  margin-top: -200px;
   display: inline-block;
 }
 
 div.linkbox {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   float: left;
-  text-align: center;
-  font-size: 48px;
+  font-size: 96px;
   opacity: 0;
 
-  -moz-animation-name: movement;
+  -moz-animation-name: transparency;
   -moz-animation-duration: 250ms;
-  -moz-animation-timing-function: ease-out;
   -moz-animation-fill-mode: forwards;
 
-  -webkit-animation-name: movement;
+  -webkit-animation-name: transparency;
   -webkit-animation-duration: 250ms;
-  -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
 
-  animation-name: movement;
+  animation-name: transparency;
   animation-duration: 250ms;
-  animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
-.btn {
-  height: 70px;
+.link {
+  height: 100%;
+  position: relative;
+}
 
-  color: #ffffff;
-  text-decoration: none;
+.link > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0px;
+  margin-top: -48px;
 }
 
 #hot {
+  background-image: url("res/hot-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 0ms;
   -webkit-animation-delay: 0ms;
   animation-delay: 0ms;
 }
 
 #cold {
+  background-image: url("res/cold-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 50ms;
   -webkit-animation-delay: 50ms;
   animation-delay: 50ms;
 }
 
 #dream {
+  background-image: url("res/dream-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 100ms;
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
 }
 
 #facebook {
+  background-image: url("res/facebook-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 150ms;
   -webkit-animation-delay: 150ms;
   animation-delay: 150ms;
 }
 
 #insta {
+  background-image: url("res/instagram-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 200ms;
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
 }
 
 #twitter {
+  background-image: url("res/twitter-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 250ms;
   -webkit-animation-delay: 250ms;
   animation-delay: 250ms;
 }
 
 #github {
+  background-image: url("res/github-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 300ms;
   -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
 }
 
 #ello {
+  background-image: url("res/ello-background.png");
+  background-size: 200px 200px;
   -moz-animation-delay: 350ms;
   -webkit-animation-delay: 350ms;
   animation-delay: 350ms;
-}
-
-
-.imagecontainer {
-  width: 800px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -400px;
-  margin-top: -50px;
-  display: inline-block;
-}
-
-div.linkbox {
-  width: 100px;
-  height: 100px;
-  float: left;
-  text-align: center;
-  font-size: 48px;
-}
-
-.btn {
-  height: 70px;
-
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.link {
-  background: #777777;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  height: 70%;
-  width: 70%;
-  margin: 15px;
-  line-height: 72px;
-}
-
-.link:hover {
-  background: #969696;
-}
-
-#imagecontainer {
-  margin-top: -50px;
 }

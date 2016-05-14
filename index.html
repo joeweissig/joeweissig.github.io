@@ -1,59 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-      <title>Joe Weissig</title>
-      <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-      <link rel="stylesheet" type="text/css" href="style.css" media="only screen and (min-aspect-ratio: 7/8)">
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--      <link rel="stylesheet" href="mobile.css" type="text/css" media="only screen and (max-aspect-ratio: 7/8)">-->
-      <link rel="icon" type="image/png" href="res/favicon-32x32.png" sizes="32x32">
-      <link rel="icon" type="image/png" href="res/favicon-96x96.png" sizes="96x96">
-      <link rel="icon" type="image/png" href="res/favicon-16x16.png" sizes="16x16">
+    <title>Joe Weissig</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   </head>
-  <body class="preload">
-    <div class="box" id="topbox">
-      <div class="linkbox" id="hot">
-        <a href="http://hot.ovaltine.solutions/">
-          <div class="link"><i class="fa fa-fw fa-fire"></i></div>
+  <body>
+
+    <div id="information">
+      <img id="profile" src="profile.jpeg" alt="" />
+      <br>
+      <div id="socialmedia">
+        <a id="facebook" onmouseover="labelChangeFacebook()" onmouseout="labelChangeBlank()" href="https://facebook.com/joe.weissig">
+          <i class="fa fa-facebook-official fa-fw fa-2x"></i>joe.weissig
         </a>
-      </div>
-      <div class="linkbox" id="dream">
-        <a href="http://dream.ovaltine.solutions/">
-          <div class="link"><i class="fa fa-fw fa-terminal"></i></div>
+        <br>
+        <a id="twitter" onmouseover="labelChangeTwitter()" onmouseout="labelChangeBlank()" href="https://twitter.com/auriic">
+          <i class="fa fa-twitter fa-fw fa-2x"></i>@auriic
         </a>
-      </div>
-      <div class="linkbox" id="insta">
-        <a href="http://instagram.com/jweissig">
-          <div class="link"><i class="fa fa-fw fa-instagram"></i></div>
-        </a>
-      </div>
-      <div class="linkbox" id="twitter">
-        <a href="http://twitter.com/hotovaltine">
-          <div class="link"><i class="fa fa-fw fa-twitter"></i></div>
+        <br>
+        <a id="tumblr" onmouseover="labelChangeTumblr()" onmouseout="labelChangeBlank()" href="https://onegoldenarrow.tumblr.com">
+          <i class="fa fa-compass fa-fw fa-2x"></i>Creative blog
         </a>
       </div>
     </div>
-    <div class="box" id="botbox">
-      <div class="linkbox" id="cold">
-        <a href="http://cold.ovaltine.solutions/">
-          <div class="link"><i class="fa fa-fw fa-anchor"></i></div>
-        </a>
+
+    <div id="linkbox">
+      <div class="biglink" id="github">
+        <p>
+          <a href="http://github.com/joeweissig/"><i class="fa fa-github fa-fw fa-3x"></i> GitHub</a>
+          , where I publicly showcase code.
+        </p>
       </div>
-      <div class="linkbox" id="facebook">
-        <a href="http://facebook.com/joe.weissig">
-          <div class="link"><i class="fa fa-fw fa-facebook"></i></div>
-        </a>
+
+      <div class="biglink" id="ello">
+        <p>
+          <a href="http://ello.co/auriic/"><i class="fa fa-pencil-square-o fa-fw fa-3x"></i> Ello</a>
+          , a microblogging site I use to post updates on projects I work on.
+        </p>
       </div>
-      <div class="linkbox" id="github">
-        <a href="http://github.com/joeweissig">
-          <div class="link"><i class="fa fa-fw fa-github"></i></div>
-        </a>
+
+      <div class="biglink" id="resume">
+        <p>
+          <a href="Resume.pdf"><i class="fa fa-file-pdf-o fa-fw fa-3x"></i> A link</a>
+           to a PDF of my résumé.
+        </p>
       </div>
-      <div class="linkbox" id="ello">
-        <a href="http://ello.co/jweissig">
-          <div class="link"><i class="fa fa-fw fa-paint-brush"></i></div>
-        </a>
-      </div>
+
     </div>
+
   </body>
 </html>

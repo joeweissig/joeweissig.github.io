@@ -1,0 +1,107 @@
+
+body {
+  margin: 0 auto;
+  position: relative;
+
+  font-family: 'Lato', sans-serif;
+
+  width: 1000px;
+
+  color: #444444;
+
+  background-color: #D1D1D1;
+
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center top;
+
+  z-index: -1;
+}
+
+i {
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+a:link {
+  color: #2255DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2255DD;
+  text-decoration: none;
+}
+
+.fa {
+  vertical-align: middle;
+  color: #444444;
+}
+
+.biglink {
+  display: flex;
+  height: 200px;
+  width: 700px;
+  margin-bottom: 15px;
+
+  position: relative;
+}
+
+.biglink p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(225, 225, 225, 0.5);
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.fa-3x:hover {
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.fa-2x:hover {
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+
+#linkbox {
+  width: 700px;
+  position: fixed;
+  margin-top: 10px;
+}
+
+#information {
+  float: right;
+  width: 250px;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#profile {
+  border: 5px solid white;
+  border-radius: 128px;
+  margin-bottom: 16px;
+}
+
+#socialmedia {
+}
+
+#github {
+  background-image: url(codebg.png);
+}
+
+#ello {
+  background-image: url(maryspeak.jpg);
+}
+
+#resume {
+  background-image: url(resumebg.png);
+}

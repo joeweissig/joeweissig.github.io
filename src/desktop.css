@@ -10,18 +10,6 @@ body {
   color: #444444;
 
   background-color: #D1D1D1;
-
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center top;
-
-  z-index: -1;
-}
-
-i {
-  -webkit-transition: 0.5s ease-out;
-  -moz-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
 }
 
 a:link {
@@ -37,6 +25,9 @@ a:visited {
 .fa {
   vertical-align: middle;
   color: #444444;
+  -webkit-transition: 0.33s ease-out;
+  -moz-transition: 0.33s ease-out;
+  transition: 0.33s ease-out;
 }
 
 .biglink {
@@ -54,21 +45,23 @@ a:visited {
   left: 0;
   background-color: rgba(225, 225, 225, 0.5);
   margin: 0;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  border-top-right-radius: 5px;
 }
 
 .fa-3x:hover {
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  transform: translateX(-20px);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  transform: translateX(-10px);
+  color: #2255DD;
 }
 
 .fa-2x:hover {
-  -webkit-transform: translateX(-5px);
-  -moz-transform: translateX(-5px);
-  transform: translateX(-5px);
+  -webkit-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: #2255DD;
 }
-
 
 #linkbox {
   width: 700px;
@@ -81,27 +74,37 @@ a:visited {
   width: 250px;
   margin-top: 10px;
   padding: 10px;
-  text-align: center;
   line-height: 40px;
+  text-align: center;
 }
 
 #profile {
   border: 5px solid white;
   border-radius: 128px;
   margin-bottom: 16px;
+  display: inline;
 }
 
-#socialmedia {
+#socialmediaicons {
+  float: left;
+  width: 105px;
+  text-align: right;
+}
+
+#socialmedialabels {
+  float: right;
+  width: 135px;
+  text-align: left;
 }
 
 #github {
-  background-image: url(codebg.png);
+  background-image: url(../res/codebg.png);
 }
 
 #ello {
-  background-image: url(maryspeak.jpg);
+  background-image: url(../res/maryspeak.jpg);
 }
 
 #resume {
-  background-image: url(resumebg.png);
+  background-image: url(../res/resumebg.png);
 }

@@ -1,0 +1,113 @@
+
+body {
+  margin: 0;
+  position: relative;
+
+  font-family: 'Lato', sans-serif;
+
+  width: 100%;
+
+  color: #444444;
+
+  background-color: #D1D1D1;
+}
+
+a:link {
+  color: #2255DD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2255DD;
+  text-decoration: none;
+}
+
+.fa {
+  vertical-align: middle;
+  color: #444444;
+}
+
+.biglink {
+  display: flex;
+  height: 75vw;
+  margin-bottom;
+  width: 100%;
+
+  position: relative;
+  background-size: 100%;
+}
+
+.biglink p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: rgba(225, 225, 225, 0.5);
+  padding: 10px 0px;
+}
+
+#information {
+  position: relative;
+  display: inline;
+  height: 200px;
+  top: 0;
+}
+
+#profile {
+  border: 5px solid white;
+  border-radius: 128px;
+  display: inline;
+  position: relative;
+  top: 30px;
+  float: left;
+  margin-left: 30px;
+}
+
+#socialmediaicons {
+  float: right;
+  width: 50vw;
+  position: relative;
+  top: 60px;
+}
+
+#socialmediaicons > br {
+  display: none;
+}
+
+#socialmedialabels {
+  display: none;
+}
+
+#linkbox {
+  width: 100%;
+  top: 200px;
+  position: absolute;
+}
+
+#github {
+  background-image: url(../res/codemobile.png);
+}
+
+#ello {
+  background-image: url(../res/maryspeakmobile.jpg);
+}
+
+#resume {
+  background-image: url(../res/resumemobile.png);
+}
+
+@media screen and (max-device-width: 480px) {
+  .link-desc {
+    display: none;
+  }
+
+  .biglink p {
+    text-align: center;
+  }
+  
+  #profile {
+    margin-left: 10px;
+  }
+}

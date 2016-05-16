@@ -3,27 +3,36 @@
   <head>
     <title>Joe Weissig</title>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <link rel="stylesheet" href="desktop.css" media="only screen and (min-device-width: 1000px)">
+    <link rel="stylesheet" href="src/desktop.css" media="only screen and (min-device-width: 1000px)">
+    <link rel="stylesheet" href="src/mobile.css" media="only screen and (max-device-width: 1000px)">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   </head>
   <body>
 
     <div id="information">
-      <img id="profile" src="profile.jpeg" alt="" />
+      <img id="profile" src="res/profile.jpeg" alt="" />
       <br>
-      <div id="socialmedia">
-        <a id="facebook" onmouseover="labelChangeFacebook()" onmouseout="labelChangeBlank()" href="https://facebook.com/joe.weissig">
-          <i class="fa fa-facebook-official fa-fw fa-2x"></i>joe.weissig
+      <div id="socialmediaicons">
+        <a id="facebook" href="https://facebook.com/joe.weissig">
+          <i class="fa fa-facebook-official fa-fw fa-2x"></i>
         </a>
         <br>
-        <a id="twitter" onmouseover="labelChangeTwitter()" onmouseout="labelChangeBlank()" href="https://twitter.com/auriic">
-          <i class="fa fa-twitter fa-fw fa-2x"></i>@auriic
+        <a id="twitter" href="https://twitter.com/auriic">
+          <i class="fa fa-twitter fa-fw fa-2x"></i>
         </a>
         <br>
-        <a id="tumblr" onmouseover="labelChangeTumblr()" onmouseout="labelChangeBlank()" href="https://onegoldenarrow.tumblr.com">
-          <i class="fa fa-compass fa-fw fa-2x"></i>Creative blog
+        <a id="tumblr" href="https://onegoldenarrow.tumblr.com">
+          <i class="fa fa-compass fa-fw fa-2x"></i>
         </a>
+      </div>
+      <div id="socialmedialabels">
+        joe.weissig
+        <br>
+        @auriic
+        <br>
+        Creative blog
       </div>
     </div>
 
@@ -31,21 +40,21 @@
       <div class="biglink" id="github">
         <p>
           <a href="http://github.com/joeweissig/"><i class="fa fa-github fa-fw fa-3x"></i> GitHub</a>
-          , where I publicly showcase code.
+          <span class="link-desc">, where I publicly showcase code.</span>
         </p>
       </div>
 
       <div class="biglink" id="ello">
         <p>
           <a href="http://ello.co/auriic/"><i class="fa fa-pencil-square-o fa-fw fa-3x"></i> Ello</a>
-          , a microblogging site I use to post updates on projects I work on.
+          <span class="link-desc">, a microblogging site I use to post updates on projects I work on.</span>
         </p>
       </div>
 
       <div class="biglink" id="resume">
         <p>
-          <a href="Resume.pdf"><i class="fa fa-file-pdf-o fa-fw fa-3x"></i> A link</a>
-           to a PDF of my résumé.
+          <a href="Resume.pdf"><i class="fa fa-file-pdf-o fa-fw fa-3x"></i> Resume PDF</a>
+          <span class="link-desc"> link for viewing or download.</span>
         </p>
       </div>
 

@@ -69,9 +69,9 @@ a:visited {
   float: right;
   width: 50vw;
   position: relative;
-  top: 60px;
-}
+/*   top: 60px; */
 
+}
 #socialmediaicons > br {
   display: none;
 }
@@ -99,6 +99,7 @@ a:visited {
 }
 
 @media screen and (max-device-width: 480px) {
+  
   .link-desc {
     display: none;
   }
@@ -106,8 +107,9 @@ a:visited {
   .biglink p {
     text-align: center;
   }
-  
+
   #profile {
     margin-left: 10px;
   }
+  
 }

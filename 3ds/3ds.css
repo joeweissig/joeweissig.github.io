@@ -1,9 +1,14 @@
 
 body {
-  background-color: #FEFEFE;
+  background-color: #999999;
+  color: #FEFEFE;
 }
 
-.game-section {
-  padding: 5px;
-  color: #1F1F1F;
+img {
+  height: 12px;
+  width: 32px;
+}
+
+.arrow {
+  width: 12px;
 }

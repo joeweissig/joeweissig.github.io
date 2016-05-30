@@ -27,7 +27,7 @@ a:visited {
   color: #444444;
 }
 
-.biglink {
+.biglink, .projectlink {
   display: flex;
   height: 75vw;
   margin-bottom;
@@ -37,7 +37,11 @@ a:visited {
   background-size: 100%;
 }
 
-.biglink p {
+.projectlink {
+  height: 50vw;
+}
+
+.biglink p, .projectlink p {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -46,6 +50,10 @@ a:visited {
   width: 100%;
   background-color: rgba(225, 225, 225, 0.5);
   padding: 10px 0px;
+}
+
+.ellolink {
+  display: none;
 }
 
 #information {
@@ -98,18 +106,22 @@ a:visited {
   background-image: url(../res/resumemobile.png);
 }
 
+#pokemon {
+  background-image: url(../res/pokemonmobile.png);
+}
+
 @media screen and (max-device-width: 480px) {
-  
+
   .link-desc {
     display: none;
   }
 
-  .biglink p {
+  .biglink p, .projectlink p {
     text-align: center;
   }
 
   #profile {
     margin-left: 10px;
   }
-  
+
 }

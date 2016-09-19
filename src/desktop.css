@@ -82,11 +82,38 @@ a:visited {
   text-align: center;
 }
 
+#profilebox {
+  text-align: center;
+}
+
 #profile {
   border: 5px solid white;
-  border-radius: 128px;
+  border-radius: 50px;
   margin-bottom: 16px;
   display: inline;
+  z-index: -1;
+}
+
+#snapcode {
+  border: 5px solid white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+
+#messengercode {
+  border: 5px solid white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  z-index: 2;
+  position: absolute;
+  display: none;
 }
 
 #socialmediaicons {
@@ -101,12 +128,11 @@ a:visited {
   text-align: left;
 }
 
-#github {
-  background-image: url(../res/codebg/1.jpg);
-}
-/*#github span {
+/* GITHUB SETTINGS */
 
-}*/
+#github {
+  background-image: url(../res/codebg/5.jpg);
+}
 #github p {
   z-index: 1000;
 }
@@ -122,39 +148,115 @@ a:visited {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 60s linear infinite 0s;
+  animation: imageAnimation 45s linear infinite 0s;
 }
 #gh1 {
   background-image: url(../res/codebg/1.jpg);
 }
 #gh2 {
   background-image: url(../res/codebg/2.jpg);
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 #gh3 {
   background-image: url(../res/codebg/3.jpg);
-  animation-delay: 20s;
+  animation-delay: 18s;
 }
 #gh4 {
   background-image: url(../res/codebg/4.jpg);
-  animation-delay: 30s;
+  animation-delay: 27s;
 }
 #gh5 {
   background-image: url(../res/codebg/5.jpg);
-  animation-delay: 40s;
+  animation-delay: 36s;
 }
-#gh6 {
-  background-image: url(../res/codebg/6.jpg);
-  animation-delay: 50s;
-}
+
+/* ELLO SETTINGS */
 
 #ello {
-  background-image: url(../res/maryspeak.jpg);
+  background-image: url(../res/ellobg/5.jpg);
+}
+#ello p {
+  z-index: 1000;
+}
+.elbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: top;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 45s linear infinite 0s;
+}
+#el1 {
+  background-image: url(../res/ellobg/1.jpg);
+  animation-delay: 1s;
+}
+#el2 {
+  background-image: url(../res/ellobg/2.jpg);
+  animation-delay: 10s;
+}
+#el3 {
+  background-image: url(../res/ellobg/3.jpg);
+  animation-delay: 19s;
+}
+#el4 {
+  background-image: url(../res/ellobg/4.jpg);
+  animation-delay: 28s;
+}
+#el5 {
+  background-image: url(../res/ellobg/5.jpg);
+  animation-delay: 35s;
 }
 
-#resume {
-  background-image: url(../res/resumebg.png);
+/* BLOG SETTINGS */
+
+#blog {
+  background-image: url(../res/blogbg/5.jpg);
 }
+#blog p {
+  z-index: 1000;
+}
+.blbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: top;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 45s linear infinite 0s;
+}
+#bl1 {
+  background-image: url(../res/blogbg/1.jpg);
+  animation-delay: 2s;
+}
+#bl2 {
+  background-image: url(../res/blogbg/2.jpg);
+  animation-delay: 11s;
+}
+#bl3 {
+  background-image: url(../res/blogbg/3.jpg);
+  animation-delay: 20s;
+}
+#bl4 {
+  background-image: url(../res/blogbg/4.jpg);
+  animation-delay: 29s;
+}
+#bl5 {
+  background-image: url(../res/blogbg/5.jpg);
+  animation-delay: 38s;
+}
+
+/* OTHER SETTINGS */
 
 #pokemon {
   background-image: url(../res/pokemonbg.png)
@@ -162,8 +264,8 @@ a:visited {
 
 @keyframes imageAnimation {
     0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    17% { opacity: 1 }
+    3% { opacity: 1; animation-timing-function: ease-out; }
+    22% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
 }

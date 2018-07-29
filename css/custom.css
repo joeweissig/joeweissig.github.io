@@ -3,7 +3,15 @@
 //
 // Having said that, I should double-check in other browsers/computers
 // that the readability is consistently a problem,
-// or something that should be solved with @media queries */
+// or something that should be solved with @media queries
+*/
 p {
     font-size: 2rem;
+}
+
+/* adding a custom background to emphasize a project is very
+// "work-in-progress", or wip.
+*/
+.wip {
+    background-image: url("../res/stripes-light.png");
 }

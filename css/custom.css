@@ -1,0 +1,9 @@
+/* the default font is abysmally small in Skeleton
+// this should help with readability 
+//
+// Having said that, I should double-check in other browsers/computers
+// that the readability is consistently a problem,
+// or something that should be solved with @media queries */
+p {
+    font-size: 2rem;
+}

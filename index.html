@@ -1,107 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <title>Joe Weissig</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="src/desktop.css" media="only screen and (min-device-width: 1000px)">
-    <link rel="stylesheet" href="src/mobile.css" media="only screen and (max-device-width: 1000px)">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="https://use.fontawesome.com/53ed39ff98.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-  </head>
-  <body>
-    <div id="information">
-      <div id="profilebox">
-<!--
-        <img id="snapcode" src="res/snapcode.png" alt="" />
-        <img id="messengercode" src="res/messenger-code.jpg" alt="" />
--->
-        <img id="profile" src="res/profile.jpeg" alt="" />
-      </div>
-      <div id="socialmediaicons">
-        <a id="snapchat" href="#">
-          <i class="fa fa-snapchat-ghost fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-        <br>
-        <a id="messenger" href="https://m.me/jweissig">
-          <i class="fa fa-comments-o fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-        <br>
-        <a id="email" href="mailto:admin@jweissig.com">
-          <i class="fa fa-envelope fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-        <br><br>
-        <a id="facebook" href="https://facebook.com/jweissig">
-          <i class="fa fa-facebook-official fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-        <br>
-        <a id="twitter" href="https://twitter.com/auriic">
-          <i class="fa fa-twitter fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-        <br>
-        <a id="resume" href="res/Resume.pdf">
-          <i class="fa fa-file-pdf-o fa-fw fa-2x" aria-hidden="true"></i>
-        </a>
-      </div>
-      
-      <div id="socialmedialabels">
-        Snapchat<br>Messenger<br>Email
-        <br><br>
-        joe.weissig<br>@auriic<br>Resume PDF
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon (TODO:Need a new favicon)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- TODO: the 'information' section should probably be specially formatted to set it apart
+                from articles and such, but that will come when all the content is uploaded -->
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 10%">
+        <h4>Joseph Weissig</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
       </div>
     </div>
-
-    <div id="linkbox">
-      <div class="projectlink" id="pokemon">
-        <p>
-          <a href="http://jweissig.com/pokemon/index.html">Pokemon Type Charts</a>
-          <span class="link-desc"> (3DS Browser-friendly)</span>
-        </p>
-      </div>
-      <div class="ellolink" id="pokemonello">
-        <p>
-          <a></a>
-        </p>
-      </div>
-      <br>
-      <div class="biglink" id="github">
-        <span class="ghbg" id="gh1">Image 01</span>
-        <span class="ghbg" id="gh2">Image 02</span>
-        <span class="ghbg" id="gh3">Image 03</span>
-        <span class="ghbg" id="gh4">Image 04</span>
-        <span class="ghbg" id="gh5">Image 05</span>
-        <p>
-          <a href="http://github.com/joeweissig/"><i class="fa fa-github fa-fw fa-3x" aria-hidden="true"></i> GitHub</a>
-          <span class="link-desc">, where I publicly showcase code.</span>
-        </p>
-      </div>
-
-      <div class="biglink" id="ello">
-        <span class="elbg" id="el1">Image 01</span>
-        <span class="elbg" id="el2">Image 02</span>
-        <span class="elbg" id="el3">Image 03</span>
-        <span class="elbg" id="el4">Image 04</span>
-        <span class="elbg" id="el5">Image 05</span>
-        <p>
-          <a href="http://ello.co/auriic/"><i class="fa fa-pencil-square-o fa-fw fa-3x" aria-hidden="true"></i> Ello</a>
-          <span class="link-desc">, a microblogging site I use to post updates on projects I work on.</span>
-        </p>
-      </div>
-
-      <div class="biglink" id="blog">
-        <span class="blbg" id="bl1">Image 01</span>
-        <span class="blbg" id="bl2">Image 02</span>
-        <span class="blbg" id="bl3">Image 03</span>
-        <span class="blbg" id="bl4">Image 04</span>
-        <span class="blbg" id="bl5">Image 05</span>
-        <p>
-          <a href="http://onegoldenarrow.tumblr.com"><i class="fa fa-compass fa-fw fa-3x" aria-hidden="true"></i> Creative blog</a>
-          <span class="link-desc">, where I find inspiration.</span>
-        </p>
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 10%">
+        <h4>String Input with Controller</h4>
+        <p>This is where details about this project will go, once they're written! Don't forget links to the GitHub and Ello pages about this as well.</p>
       </div>
     </div>
+    <div class="row">
+      <!-- 
+      <div class="one-third column" style="margin-top:10%">
+        <!-- TODO: take a new screenshot of the pokemon site and put it here -->
+        <!--       make sure that it's upright and non-blurry, unlike the others -->
+        <img src="../res/pokemonbg.png" />
+      </div>
+      <!-- 3DS-Optimized Pokemon Type Chart
+      ---------------------------------------------- -->
+      <div class="two-thirds column" style="margin-top:10%">
+        <h4><a href="http://jweissig.com/pokemon/index.html">3DS-Optimized Pokemon Type Chart</a></h4>
+        <p>As both a project to learn about web design from a wholly different kind of device and as a tool to use with the rerelease of the Game Boy Pokemon games on the 3DS eShop, the 3DS-Optimized Pokemon Type Chart can be accessed with the 3DS Browser to determine type matchups and effectiveness.</p>
+        <p>The simple interface provides enough information to understand which moves to use against foes while respecting the 3DS's limited hardware.</p>
+      </div>
+    </div>
+  </div>
 
-  </body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>

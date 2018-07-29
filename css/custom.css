@@ -15,3 +15,9 @@ p {
 .wip {
     background-image: url("../res/stripes-light.png");
 }
+
+@media (min-width: 550px) {
+    .desktop-only {
+        display: none;
+    }
+}

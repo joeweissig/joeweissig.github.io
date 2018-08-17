@@ -7,6 +7,40 @@
 */
 p {
     font-size: 2rem;
+    font-family: "Overpass Mono";
+}
+
+.column h4 {
+    font-family: "Overpass Mono";
+    font-weight: bold;
+}
+
+#header {
+    font-family: "Raleway";
+}
+
+/* navbar styling */
+#navbar {
+    overflow: hidden;
+    background-color: #BBB;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar h3 {
+    float: left;
+    display: block;
+    color: #444;
+    padding: 14px;
+}
+
+#navbar h4 {
+    float: right;
+    display: block;
+    color: #777;
+    padding: 14px;
+    text-decoration: none;
 }
 
 /* adding a custom background to emphasize a project is very
